@@ -1,0 +1,21 @@
+<div class="card" style="margin: 100px">
+  <div class="card-body">
+    <form [formGroup]="data">
+      <div class="input-group" style="align-content: center">
+        <span class="input-group-text">Id del paquete: </span>
+        <input type="text" placeholder="Ingrese el ID del paquete" class="form-control" formControlName="idPaqueteDetalle" >
+      </div>
+      <div class="input-group" style="margin-top: 10px">
+        <span class="input-group-text">Reportado por: </span>
+        <input type="text" placeholder="Ingrese el nombre de quien reporta" class="form-control" formControlName="reportadoPor">
+      </div>
+     <div class="input-group" style="margin-top: 10px">
+        <span class="input-group-text">Estado del paquete</span>
+        <input type="text"  placeholder="Ingrese el estado del paquete" class="form-control" formControlName="estado">
+      </div>
+      <div>
+        <button type="button" class="btn btn-primary btn-lg" (click)="update()">Actualizar datos</button>
+      </div>
+    </form>
+  </div>
+</div>
