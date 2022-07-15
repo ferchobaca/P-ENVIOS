@@ -1,8 +1,8 @@
 const sql = require('mssql')
 const config = {
-    user: 'userserver',
-    password: 'passwordserver',
-    server: 'put a server', // You can use 'localhost\\instance' to connect to named instance
+    user: 'userdatabase',
+    password: 'passwordatabase',
+    server: 'serverlink', // You can use 'localhost\\instance' to connect to named instance
     database: 'databasename',
     options: {
         encrypt: false, // for azure
